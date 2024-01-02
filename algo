@@ -1,0 +1,41 @@
+ALGORITHM CompareValues
+VAR
+
+    
+   ch : STRING
+   w:INTEGER :=1
+   v:INTEGER :=0
+   
+
+BEGIN
+
+Read (ch )
+
+FOR i FROM 0  TO ch.lenght -1
+
+ STEP  1 DO
+
+IF (ch[i] == " ") THEN
+
+    w: w + 1
+
+END_IF
+
+IF (ch [i]== "a" or "e" or "i" or "o" or "u" or "y" ) THEN
+    
+    v: v + 1
+
+     
+     
+END_IF
+
+
+END_FOR
+
+write (ch.lenght)
+write (w)
+write (v)
+
+
+END
+
