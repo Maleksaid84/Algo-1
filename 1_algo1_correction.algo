@@ -1,0 +1,32 @@
+ALGORITHM Checkpoint-algo
+
+
+
+VAR
+
+ tab1 , tab2 : ARRAY_OF INTEGER[3];
+
+ i, j,k : INTEGER 
+  Ps:=INTEGER=0
+
+
+BEGIN
+   
+ FOR i FROM 0 TO tab1.lenth-1 STEP step 1 DO
+         Write ("enter element of tab1")
+         Read (tab1[i])  
+     END_FOR
+
+
+FOR j FROM 0 TO tab2.length-1 STEP 1  DO
+        Write ("enter element of tab2")
+        Read (tab2[j])
+    END_FOR
+        
+FOR k FROM 0 TO tab1.length-1 STEP 1  DO
+    Ps= Ps+tab1[k]*tab2[k]
+END_FOR
+    
+
+
+END

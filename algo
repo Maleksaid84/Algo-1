@@ -1,41 +1,33 @@
-ALGORITHM CompareValues
+ALGORITHM Compare tab
+
+
+
 VAR
 
-    
-   ch : STRING
-   w:INTEGER :=1
-   v:INTEGER :=0
-   
+    tab: array_t1 : ARRAY_OF INTEGER [5];
+
+    tab: array_t2 : ARRAY_OF INTEGER [5];
+         
+         i : INTEGER
 
 BEGIN
 
-Read (ch )
+     tab := {1,2,3,4,5}
+     write ('print array_t1:')
 
-FOR i FROM 0  TO ch.lenght -1
+     FOR i FROM 0 TO tab.lenth-1 STEP step  DO
+        write (array_t1[i])
+     END_FOR
 
- STEP  1 DO
+     tab := {1,2,3,4,5}
+     write ('print array_t2:')
 
-IF (ch[i] == " ") THEN
+     FOR i FROM 0 TO tab.lenth-1 STEP step  DO
+        write (array_t2[i])
+     END_FOR
 
-    w: w + 1
-
-END_IF
-
-IF (ch [i]== "a" or "e" or "i" or "o" or "u" or "y" ) THEN
-    
-    v: v + 1
-
-     
-     
-END_IF
-
-
-END_FOR
-
-write (ch.lenght)
-write (w)
-write (v)
-
-
+   IF (array_t1 <> array_t2) THEN
+    set_instructions
+   END_IF
 END
 
