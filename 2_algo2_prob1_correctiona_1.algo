@@ -1,18 +1,18 @@
 ALGORITHM dist_elm
 VAR
-    tab1 , tab2 : ARRAY_OF INTEGER[10];
-    SUM : INTEGER := 0
-    i, j : INTEGER 
-    found : BOOLEAN 
+    tab1 : ARRAY_OF INTEGER[10];
+    char : STRING 
+    i: INTEGER 
+    
 BEGIN
     FOR i FROM 0 TO tab1.length-1 STEP 1  DO
-        Write ("enter element of tab1")
+      
         Read (tab1[i])   
     END_FOR
     
 
-    FOR j FROM 0 TO tab2.length-1 STEP 1  DO
-        Write ("enter element of tab2")
+    FOR j FROM 0 TO char.length-1 STEP 1  DO
+       
         Read (tab2[j])
     END_FOR
     
