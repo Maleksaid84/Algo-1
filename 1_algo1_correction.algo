@@ -1,5 +1,12 @@
 ALGORITHM Checkpoint-algo
 
+FUNCTION function_name(parameters) : return_type
+VAR
+    set_declarations
+BEGIN
+    set_instructions
+    RETURN value ;
+END
 
 
 VAR
